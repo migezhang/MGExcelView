@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="169" id="KGk-i7-Jjw" customClass="ComCollectionViewExcelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVw-eN-LOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <color key="backgroundColor" red="1" green="0.47569417949999998" blue="0.2204659886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="y2g-iw-M1w"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCz-Uq-00s">
+                        <rect key="frame" x="0.0" y="60" width="320" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="FfP-eN-A46"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="zVw-eN-LOZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2q3-db-KR7"/>
+                    <constraint firstItem="pCz-Uq-00s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="69a-Kj-1QE"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pCz-Uq-00s" secondAttribute="bottom" constant="7" id="BtP-GE-Dds"/>
+                    <constraint firstItem="pCz-Uq-00s" firstAttribute="top" secondItem="zVw-eN-LOZ" secondAttribute="bottom" id="HzM-dN-mDE"/>
+                    <constraint firstAttribute="trailing" secondItem="zVw-eN-LOZ" secondAttribute="trailing" id="fJu-c3-Nsl"/>
+                    <constraint firstItem="zVw-eN-LOZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i26-97-M11"/>
+                    <constraint firstAttribute="trailing" secondItem="pCz-Uq-00s" secondAttribute="trailing" id="na1-Gg-Nvy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="excelView" destination="pCz-Uq-00s" id="FYb-tv-Z7w"/>
+                <outlet property="excelViewBottomC" destination="BtP-GE-Dds" id="cv9-7Y-EfC"/>
+                <outlet property="excelViewHeightC" destination="FfP-eN-A46" id="Sc8-hn-FLN"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="75.5"/>
+        </tableViewCell>
+    </objects>
+</document>
